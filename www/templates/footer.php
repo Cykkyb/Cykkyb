@@ -40,7 +40,6 @@
 <script src="../script/registration.js"></script>
 <script src="../script/login.js"></script>
 <script src="../script/update_basket.js"></script>
-<script src="../script/order.js"></script>
 <script src="../script/counter.js"></script>
 <script src="../script/del_basket.js"></script>
 <script src="../script/personal.js"></script>
