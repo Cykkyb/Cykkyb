@@ -1,0 +1,51 @@
+
+.main-form {
+    background-color: black;
+    padding: 50px 0;
+
+    &__container{
+
+    }
+    &__label {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        font-family: "Century Gothic";
+        padding-bottom: 50px ;
+    }
+
+    &__form {
+
+    }
+    &_item{
+
+    }
+    &__name {
+        color: white;
+        text-align: left;
+        padding: 20px 0;
+        font-size: 24px;
+    }
+
+
+    &__input {
+        padding: 0 20px;
+        max-width: 300px;
+        width: 100%;
+        background-color: rgba(128, 128, 128, 50%);
+        height: 40px;
+        color: white;
+    }
+
+    &__button {
+        margin-top: 40px;
+        background-color: rgba(128, 128, 128, 50%);
+        color: wheat;
+        height: 40px;
+        width: 150px;
+    }
+
+}
+.alert {
+    color: orangered;
+}

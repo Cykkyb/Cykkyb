@@ -1,0 +1,20 @@
+.counter {
+  align-items: center;
+  display: flex;
+}
+.counter__input {
+  margin: 0 5px;
+  padding: 5px;
+  height: 40px;
+  width: 60px;
+  font-size: 18px;
+  text-align: center;
+}
+.counter__button {
+  color: white;
+  width: 40px;
+  height: 40px;
+  background-color: black;
+}
+
+/*# sourceMappingURL=counter.css.map */

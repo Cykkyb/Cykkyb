@@ -1,0 +1,15 @@
+.footer__wrapepr {
+  background-image: url("../icon/footer/background.png");
+  color: white;
+}
+.footer__container {
+  display: flex;
+}
+.footer__label {
+  font-size: 24px;
+}
+.footer__text {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=footer.css.map */

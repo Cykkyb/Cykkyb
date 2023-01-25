@@ -1,0 +1,39 @@
+@use 'breakpoints' as media;
+
+.catalog {
+
+    &__wrapper {
+        padding: 50px 0;
+    }
+
+    &__container {
+
+    }
+
+    &__label {
+        margin: 0 0 50px 0;
+        color: white;
+        text-align: center;
+        font-size: 34px;
+    }
+
+    &__list {
+        margin: auto;
+    }
+
+    &__list-items {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include media.breakpoint(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @include media.breakpoint(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include media.breakpoint(sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}
