@@ -16,28 +16,30 @@ global $user;
                 <div class="personal__item">
                     <div class="personal__info-label"> Имя:</div>
                     <div class="personal__info-content"> <?= $user['login'] ?> </div>
-                    <form action="/php/update_user.php" method="post" class="personal__change">
-                        <input type="text" class="personal__input personal__input_change" name="login">
-                        <button type="submit" class="personal__button-submit">Изменить</button>
-                    </form>
                     <buttob class="personal__button-change">
                         <i class="personal__button-icon fa-solid fa-retweet"></i>
                         <i class="personal__button-icon personal__button-icon_hidden fa-solid fa-xmark"></i>
                     </buttob>
+                    <form action="/php/update_user.php" method="post" class="personal__change">
+                        <input type="text" class="personal__input personal__input_change" name="login">
+                        <button type="submit" class="personal__button-submit">Изменить</button>
+                    </form>
+
                 </div>
 
                 <?php if ($user['phone']) { ?>
                     <div class="personal__item">
                         <div class="personal__info-label"> Номер телефона:</div>
                         <div class="personal__info-content"> <?= $user['phone'] ?> </div>
-                        <form action="/php/update_user.php" method="post" class="personal__change">
-                            <input type="text" class="personal__input personal__input_change" name="number">
-                            <button type="submit" class="personal__button-submit">Изменить</button>
-                        </form>
                         <buttob class="personal__button-change">
                             <i class="personal__button-icon fa-solid fa-retweet"></i>
                             <i class="personal__button-icon personal__button-icon_hidden fa-solid fa-xmark"></i>
                         </buttob>
+                        <form action="/php/update_user.php" method="post" class="personal__change">
+                            <input type="text" class="personal__input personal__input_change" name="number">
+                            <button type="submit" class="personal__button-submit">Изменить</button>
+                        </form>
+
 
                     </div>
                 <?php } else { ?>
@@ -54,14 +56,14 @@ global $user;
                     <div class="personal__item">
                         <div class="personal__info-label"> Адрес:</div>
                         <div class="personal__info-content"><?= $user['address'] ?> </div>
-                        <form action="/php/update_user.php" method="post" class="personal__change">
-                            <input type="text" class="personal__input personal__input_change" name="address">
-                            <button type="submit" class="personal__button-submit">Изменить</button>
-                        </form>
                         <buttob class="personal__button-change">
                             <i class="personal__button-icon fa-solid fa-retweet"></i>
                             <i class="personal__button-icon personal__button-icon_hidden fa-solid fa-xmark"></i>
                         </buttob>
+                        <form action="/php/update_user.php" method="post" class="personal__change">
+                            <input type="text" class="personal__input personal__input_change" name="address">
+                            <button type="submit" class="personal__button-submit">Изменить</button>
+                        </form>
                     </div>
                 <?php } else { ?>
                     <form action="/php/update_user.php" method="post" class="personal__item">Адрес:

@@ -1,0 +1,48 @@
+@import 'breakpoints';
+
+
+.mobile-menu {
+    padding: 0 20px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transform: translate(320px);
+    background-color: black;
+    color: white;
+    transition: transform 0.5s ease;
+    display: none;
+
+    &_active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0);
+    }
+
+    @include breakpoint(md) {
+        display: block;
+        height: calc(100vh - 125px);
+
+    }
+     @include breakpoint(sm) {
+        display: block;
+        height: calc(100vh - 80px);
+
+    }
+
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.mobile-info {
+    font-size: 14px;
+    margin: 20px 0;
+
+    &__item {
+        margin: 10px 0;
+    }
+}
+

@@ -1,0 +1,33 @@
+@import 'breakpoints';
+
+.offers {
+    &__wrapper {
+        padding: 100px 0;
+        background-color: black;
+    }
+
+    &__container {
+    }
+
+    &__label {
+        font-size: 42px;
+        color: white;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+
+    &__items {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+          @include breakpoint(lg) {
+              grid-template-columns: repeat(3, 1fr);
+        }
+         @include breakpoint(md) {
+              grid-template-columns: repeat(2, 1fr);
+        }
+         @include breakpoint(sm) {
+              grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

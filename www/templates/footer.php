@@ -35,12 +35,6 @@
         </div>
     </div>
 </footer>
-
-<script src="../script/header.js"></script>
-<script src="../script/registration.js"></script>
-<script src="../script/login.js"></script>
-<script src="../script/update_basket.js"></script>
-<script src="../script/counter.js"></script>
-<script src="../script/del_basket.js"></script>
-<script src="../script/personal.js"></script>
+</wrapper>
+<script type="text/javascript" rel="stylesheet" src="/script/dist/script.min.js"></script>
 </body>

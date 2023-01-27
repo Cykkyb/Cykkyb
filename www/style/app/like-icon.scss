@@ -1,0 +1,12 @@
+@import 'breakpoints';
+.like-icon{
+
+        color: white;
+        background-color: initial;
+        font-size: 30px;
+
+        &__active{
+            color: red;
+        }
+
+    }

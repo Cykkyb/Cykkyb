@@ -1,0 +1,108 @@
+@import 'breakpoints';
+
+.personal {
+    color: white;
+
+    &__container {
+        padding: 60px 20px;
+
+    }
+
+    &__main {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        min-height: 300px;
+
+         @include breakpoint(md) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        background-color: #969696;
+        border-radius: 10px;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    &__icon {
+        height: 160px;
+        border-radius: 50%;
+        margin: 20px;
+    }
+
+    &__info {
+        flex-grow: 2;
+        padding: 50px;
+        background-color: #969696;
+        border-radius: 10px;
+        font-size: 24px;
+         @include breakpoint(sm) {
+            font-size: 18px;
+            padding: 20px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 20px;
+    }
+
+    &__info-label {
+        display: inline-block;
+    }
+
+    &__info-content {
+        display: inline-block;
+        color: antiquewhite;
+
+    }
+
+    &__change {
+        display: none;
+
+        &_active {
+            display:block;
+        }
+    }
+
+    &__button-change {
+        vertical-align: middle;
+    }
+    &__button-icon {
+        padding: 10px;
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__input {
+        display: block;
+        max-width: 300px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: rgba(64, 64, 64, 0.3);
+        padding: 5px 20px;
+        color: white;
+        font-size: 16px;
+
+    }
+
+    &__button-submit {
+        background-color: darkblue;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        margin: 10px 0;
+        display: none;
+
+        &_active {
+            display: inline-block;
+        }
+    }
+
+
+}

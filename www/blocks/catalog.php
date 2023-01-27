@@ -21,7 +21,7 @@ foreach ($basket as $item) {
 <div class="catalog">
     <div class="catalog__wrapper">
         <div class="catalog__container container1">
-            <div class="catalog__label">Каталог</div>
+            <div class="catalog__label">Калог</div>
             <div class="catalog__list">
                 <div class="catalog__list-items">
                     <?php if ($product) { ?>

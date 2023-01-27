@@ -1,0 +1,51 @@
+@import 'breakpoints';
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container1 {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px ;
+}
+
+.logo{
+     font-family: "Bradley Hand ITC";
+     color: white;
+}
+
+.login {
+    display: flex;
+    gap: 15px;
+
+     @include breakpoint(sm) {
+        margin-left: auto;
+    }
+    &__input {
+
+    }
+    &__registration {
+
+    }
+}
+
+.cart{
+    position: relative;
+    &__icon{
+
+    }
+    &__count{
+        text-align: center;
+        position: absolute;
+        font-size: 12px;
+        top: -30%;
+        right: -30%;
+        height: 15px;
+        width: 15px;
+        background-color: orangered;
+        border-radius:50% ;
+    }
+}
+

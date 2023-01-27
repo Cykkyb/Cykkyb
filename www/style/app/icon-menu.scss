@@ -1,0 +1,39 @@
+@import 'breakpoints';
+.icon-menu {
+    display: none;
+    width: 40px;
+
+     @include breakpoint(md) {
+        display: block;
+    }
+
+    &_active {
+        span {
+            transform: scale(0);
+        }
+
+        &:before {
+            transform: translateY(12px) rotate(135deg);
+        }
+
+        &:after {
+            transform: translateY(-12px) rotate(-135deg);
+        }
+    }
+}
+
+.icon-menu span {
+    margin: 7px 0;
+
+}
+
+.icon-menu:before,
+.icon-menu:after,
+.icon-menu span {
+    background: #fff;
+    content: "";
+    display: block;
+    height: 5px;
+    border-radius: 3px;
+    transition: 0.5s;
+}

@@ -1,0 +1,25 @@
+@import 'breakpoints';
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+
+    @include breakpoint(md) {
+        display: none;
+
+        &_mobile {
+            gap: 25px;
+            flex: 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        font-size: 24px;
+
+         @include breakpoint(lg){
+             font-size: 18px;
+        }
+    }
+}
